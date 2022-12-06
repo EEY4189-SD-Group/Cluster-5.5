@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 1%;
+    margin: 0;
+}
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    justify-content:center;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 4%;
+    align-content: center;
+    min-height: 100vh;
+}
+.Section_top{
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/20211211_170112.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    padding-top: 35%;
+    animation: change 20s infinite ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 75vw;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #e1ff34;
+    font-size: 70px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #ecf006;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #66f722c4;
+    color: #fff;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(images/20211211_170112.jpg);
+    }
+    20%
+    {
+        background-image: url(images/agro2.jpg);
+    }
+    40%
+    {
+        background-image: url(images/20210210_181147.jpg);
+    }
+    60%
+    {
+        background-image: url(images/organic-farming.jpg);
+    }
+    80%
+    {
+        background-image: url(images/agro5.jpg);
+    }
+    100%
+    {
+        background-image: url(images/agriculture_header_image.jpg);
+    }
+}
