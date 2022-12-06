@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image:url('Organic-food-fraud.jpg');  */
+    background-image: linear-gradient(43deg, #42d3bb 0%, #3fc56b 46%, #FFCC70 100%); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;   
+}
+
+
+h1 {
+    font-family: 'Playfair Display',
+        serif;
+    font-size: 40px;
+    color: rgba(253, 114, 0, 0.603);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+
+
+input,
+textarea,
+label {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.container {
+    background-image:url(images/conc.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70%;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px
+}
+
+
+form {
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+    
+}
+
+input,
+textarea,
+label {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: #000000;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000000;
+}
+
+input[type=submit] {
+    background-color: hsla(51, 99%, 49%, 0.993);
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    /* transition: all .3s ease; */
+}
+
+input[type=submit]:hover {
+    background: rgb(8, 230, 19);
+    color: #050705;
+}
+
+input,
+textarea {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #070707;
+}
+
+a {
+    color: #050404;
+    font-style: italic;
+}
+
+a:hover {
+    color: #fff;
+}
