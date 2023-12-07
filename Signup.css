@@ -1,0 +1,324 @@
+/* Variables */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: #008631;
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: min(90%, 50rem);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.left-side {
+  background-color: #c3f0c5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.8rem;
+}
+.left-side .cart-illustration {
+  width: 600px;
+  margin: auto;
+  display: block;
+}
+.left-side .img-and-text h1 {
+  color: #470808;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4rem;
+  width: 500px;
+  margin-inline: auto;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+.right-side a {
+  color: #0b560d;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.right-side a:hover {
+  color: #761515e9;
+}
+.right-side h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #008631;
+}
+.right-side p {
+  color: #008631;
+  padding: 1.6rem 0;
+}
+.right-side .sign-up-buttons {
+  padding-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.right-side #sign-up {
+  background-color: #fff;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  border: 0.1rem solid #d0d3d7;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.right-side #sign-up-facebook {
+  background-color: #3b5998;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.right-side .socials-divider {
+  text-align: center;
+  position: relative;
+  margin: 1.6rem 1.6rem;
+}
+.right-side .socials-divider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45%;
+  height: 0.1rem;
+  background-color: #d0d3d7;
+}
+.right-side .socials-divider::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 45%;
+  height: 0.1rem;
+  background-color: #d0d3d7;
+}
+.right-side form {
+  display: flex;
+  flex-direction: column;
+}
+.right-side form label {
+  color: #323537;
+  margin-bottom: 1rem;
+}
+.right-side form .name-input-container,
+.right-side form .contact-input-container,
+.right-side form .email-input-container,
+.right-side form .district-input-container,
+.right-side form .address-input-container,
+.right-side form .uname-input-container,
+.right-side form .password-input-container,
+.right-side form .confirm-password-input-container,
+.right-side form .user-type-input-container {
+  position: relative;
+}
+.right-side form .name-input-container .icon-name,
+.right-side form .contact-input-container .icon-contact,
+.right-side form .email-input-container .icon-email,
+.right-side form .district-input-container .icon-district,
+.right-side form .address-input-container .icon-address,
+.right-side form .uname-input-container .icon-uname,
+.right-side form .password-input-container .icon-password,
+.right-side form .confirm-password-input-container .icon-password,
+.right-side form .user-type-input-container .icon-user-type {
+  position: absolute;
+  top: 2rem;
+  left: 2.4rem;
+  color: #000000;
+}
+.right-side form input,
+.right-side form select {
+  padding: 1.6rem 2.4rem 1.6rem 5.4rem;
+  border-radius: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  border: 0.1rem solid #d0d3d7;
+  margin-bottom: 3.2rem;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.right-side form input:focus,
+.right-side form select:focus {
+  border: 0.1rem solid #5d0303;
+  background-color: none;
+  outline: none;
+  box-shadow: 0 0 0.8rem rgba(233, 130, 101, 0.241);
+}
+
+/* Modified CSS for the dropdown arrow position */
+.right-side form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1.6rem 2.4rem 1.6rem 5.4rem;
+  border-radius: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  border: 0.1rem solid #d0d3d7;
+  margin-bottom: 3.2rem;
+  width: 100%;
+  transition: all 0.4s ease;
+  background: url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/svg/1109/1109124.svg') no-repeat right center;
+  background-size: 20px; /* Adjust the size of the arrow */
+}
+
+.right-side form select:focus {
+  border: 0.1rem solid #5d0303;
+  background-color: none;
+  outline: none;
+  box-shadow: 0 0 0.8rem rgba(233, 130, 101, 0.241);
+}
+
+.right-side .agreement-check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 4.8rem;
+  padding-top: 2rem;
+}
+.right-side .agreement-check span {
+  font-size: 1.4rem;
+  color: #000000;
+}
+.right-side #register-button {
+  display: inline-block;
+  width: 100%;
+  transition: all 0.4s ease;
+  background-color: #24880b;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1.6rem rgba(184, 184, 8, 0.587);
+}
+.right-side #register-button:hover {
+  background-color: #721111;
+}
+.right-side .credits {
+  font-size: 1.2rem;
+  color: #080808;
+  text-align: center;
+  padding-top: 2.4rem;
+}
+
+/* Media queries */
+@media (max-width: 1255px) {
+  .left-side {
+    padding: 2rem;
+  }
+  .left-side .cart-illustration {
+    width: 450px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .right-side {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 1000px) {
+  .left-side {
+    padding: 1rem;
+  }
+  .left-side .cart-illustration {
+    width: 300px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .right-side {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    padding: 1rem;
+  }
+  .left-side .cart-illustration {
+    display: none;
+  }
+  .left-side .img-and-text h1 {
+    text-align: left;
+  }
+
+  .right-side {
+    grid-column: auto;
+  }
+  .right-side h2 {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 55%;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    grid-column: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3.2rem;
+  }
+  .right-side h2 {
+    display: inline-block;
+  }
+  .right-side .sign-up-buttons {
+    flex-direction: column;
+  }
+  .right-side .agreement-check span {
+    line-height: 2.4rem;
+  }
+}
