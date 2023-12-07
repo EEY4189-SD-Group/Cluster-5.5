@@ -1,0 +1,17 @@
+body {
+    background-color:#c3f0c5;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.btn-primary{
+    background-color: #008631;
+    border-color: #008631;
+}
+
+.btn-primary:hover{
+    background-color: #761515e9;
+    border-color: #008631;
+}
