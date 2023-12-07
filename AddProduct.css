@@ -1,0 +1,79 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #c3f0c5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(15, 133, 4, 0.884);
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Style the select box to include a background image for the dropdown icon */
+select {
+    background-image: url('path-to-your-dropdown-icon.png'); /* Replace with your dropdown icon image */
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}

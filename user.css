@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3f0c5;
+}
+
+header {
+    display: flex;
+    background-color: #008631;
+    color: #fff;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-header-img {
+    display: none; /* Hide the image in the header */
+}
+
+h1 {
+    margin: 0; /* Remove the margin to make the text closer to the image */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img-container {
+    margin-bottom: 20px; /* Add some space between the image and the form */
+}
+
+.profile-img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #008631;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #008631;
+}
